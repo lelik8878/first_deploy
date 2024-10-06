@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>            
+                <div class="header_wrapper">
+                    <div class="header_wrapper-top">
+                        <div class="container">
+                            <div class="header_wrapper-top-container">
+                                <div class="header_wrapper-location">
+                                    <div class="header_wrapper-location-adres">
+                                        <svg width="12.800049" height="16.000000" viewBox="0 0 12.8 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Primary fill" d="M12.8 6.39C12.8 2.86 9.93 0 6.39 0C2.86 0 0 2.86 0 6.39C0 6.52 0 6.63 0 6.75C0.11 9.59 1.6 12.84 5.71 15.78C6.12 16.07 6.67 16.07 7.08 15.78C11.2 12.84 12.68 9.59 12.79 6.75C12.8 6.63 12.8 6.52 12.8 6.39ZM8.09 8.09C8.54 7.64 8.8 7.03 8.8 6.39C8.8 5.76 8.54 5.15 8.09 4.7C7.64 4.25 7.03 4 6.39 4C5.76 4 5.15 4.25 4.7 4.7C4.25 5.15 4 5.76 4 6.39C4 7.03 4.25 7.64 4.7 8.09C5.15 8.54 5.76 8.8 6.39 8.8C7.03 8.8 7.64 8.54 8.09 8.09Z" fill="#8C9196" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                        </svg>
+                                        <p>Минск, ул. Чюрлёниса, 6.</p>
+                                    </div>
+                                    <div class="header_wrapper-location-metro">
+                                        <svg width="18.000000" height="12.000000" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs/>
+                                            <path id="Vector" d="M16.76 10.32L12.55 0L9 6.03L5.45 0L1.23 10.32L0 10.32L0 11.88L6.36 11.88L6.36 10.32L5.41 10.32L6.33 7.75L9 12L11.66 7.75L12.58 10.32L11.63 10.32L11.63 11.88L18 11.88L18 10.32L16.76 10.32Z" fill="#D72C0D" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                        </svg>                            
+                                        <p>Малиновка</p>
+                                    </div>
+                                </div>
+                                <div class="header_wrapper-location-work-time">
+                                    <svg width="12.800049" height="12.800049" viewBox="0 0 12.8 12.8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path id="Primary fill" d="M6.39 12.8C2.87 12.8 0 9.92 0 6.39C0 2.87 2.87 0 6.39 0C9.92 0 12.8 2.87 12.8 6.39C12.8 9.92 9.92 12.8 6.39 12.8ZM8.23 9.03C8.02 9.03 7.82 8.95 7.66 8.8L5.83 6.96C5.68 6.81 5.6 6.61 5.6 6.39L5.6 3.19C5.6 2.75 5.95 2.39 6.39 2.39C6.84 2.39 7.19 2.75 7.19 3.19L7.19 6.06L8.8 7.66C9.11 7.98 9.11 8.48 8.8 8.8C8.64 8.95 8.43 9.03 8.23 9.03Z" fill="#6D7175" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>
+                                    <p>Пон.-Пят. 10:00-21:00</p>
+                                    <p>|</p>
+                                    <p>Суб.-Вос. 10:00-20:00</p>
+                                </div>
+                                <div class="header_wrapper-location-phone">
+                                    <a href="tel:+375445010355">
+                                        <svg width="11.200195" height="16.000000" viewBox="0 0 11.2002 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs/>
+                                            <path id="Primary fill" d="M0 1.19C0 0.53 0.53 0 1.2 0L10 0C10.66 0 11.2 0.53 11.2 1.19L11.2 14.8C11.2 15.46 10.66 16 10 16L1.2 16C0.53 16 0 15.46 0 14.8L0 1.19ZM1.6 1.6L9.6 1.6L9.6 12.8L1.6 12.8L1.6 1.6ZM4.79 13.6C4.35 13.6 4 13.95 4 14.39C4 14.84 4.35 15.2 4.79 15.2L6.39 15.2C6.84 15.2 7.2 14.84 7.2 14.39C7.2 13.95 6.84 13.6 6.39 13.6L4.79 13.6Z" fill="#8C9196" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                        </svg>
+                                        <span>+ 375 (44) 501 03 55</span>
+                                    </a>
+                                    <a href="https://instagram.com/">
+                                        <svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <clipPath id="clip93_16337">
+                                                    <rect id="instagram-2-1 1" rx="-0.003269" width="17.993462" height="17.993462" transform="translate(0.003269 0.003269)" fill="white" fill-opacity="0"/>
+                                                </clipPath>
+                                                <radialGradient gradientTransform="translate(1.16494 17.6057) rotate(0) scale(22.8533 22.8533)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_radial_93_16334_0" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0.090000" stop-color="#FA8F21"/>
+                                                    <stop offset="0.780000" stop-color="#D82D7E"/>
+                                                </radialGradient>
+                                                <radialGradient gradientTransform="translate(12.468 17.0277) rotate(0) scale(20.1111 20.1111)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_radial_93_16335_0" gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0.640000" stop-color="#8C3AAA" stop-opacity="0.000000"/>
+                                                    <stop offset="1.000000" stop-color="#8C3AAA"/>
+                                                </radialGradient>
+                                            </defs>
+                                            <rect id="instagram-2-1 1" rx="-0.003269" width="17.993462" height="17.993462" transform="translate(0.003269 0.003269)" fill="#FFFFFF" fill-opacity="0"/>
+                                            <g clip-path="url(#clip93_16337)">
+                                                <path id="Vector" d="M4.56 17.93C3.49 17.88 2.91 17.7 2.52 17.55C2.01 17.35 1.64 17.12 1.26 16.73C0.87 16.35 0.64 15.98 0.44 15.47C0.29 15.08 0.11 14.5 0.06 13.43C0.01 12.27 0 11.93 0 9C0 6.06 0.01 5.72 0.06 4.56C0.11 3.49 0.29 2.91 0.44 2.52C0.64 2.01 0.87 1.64 1.26 1.26C1.64 0.87 2.01 0.63 2.52 0.44C2.91 0.29 3.49 0.11 4.56 0.06C5.72 0.01 6.06 0 8.99 0C11.93 0 12.27 0.01 13.43 0.06C14.5 0.11 15.08 0.29 15.47 0.44C15.98 0.63 16.35 0.87 16.73 1.26C17.12 1.64 17.35 2.01 17.55 2.52C17.7 2.91 17.88 3.49 17.93 4.56C17.98 5.72 18 6.06 18 9C18 11.93 17.98 12.27 17.93 13.43C17.88 14.5 17.7 15.08 17.55 15.47C17.35 15.98 17.12 16.35 16.73 16.73C16.35 17.12 15.98 17.35 15.47 17.55C15.08 17.7 14.5 17.88 13.43 17.93C12.27 17.98 11.93 18 8.99 18C6.06 18 5.72 17.98 4.56 17.93Z" fill="url(#paint_radial_93_16334_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                                <path id="Vector" d="M4.56 17.93C3.49 17.88 2.91 17.7 2.52 17.55C2.01 17.35 1.64 17.12 1.26 16.73C0.87 16.35 0.64 15.98 0.44 15.47C0.29 15.08 0.11 14.5 0.06 13.43C0.01 12.27 0 11.93 0 9C0 6.06 0.01 5.72 0.06 4.56C0.11 3.49 0.29 2.91 0.44 2.52C0.64 2.01 0.87 1.64 1.26 1.26C1.64 0.87 2.01 0.63 2.52 0.44C2.91 0.29 3.49 0.11 4.56 0.06C5.72 0.01 6.06 0 8.99 0C11.93 0 12.27 0.01 13.43 0.06C14.5 0.11 15.08 0.29 15.47 0.44C15.98 0.63 16.35 0.87 16.73 1.26C17.12 1.64 17.35 2.01 17.55 2.52C17.7 2.91 17.88 3.49 17.93 4.56C17.98 5.72 18 6.06 18 9C18 11.93 17.98 12.27 17.93 13.43C17.88 14.5 17.7 15.08 17.55 15.47C17.35 15.98 17.12 16.35 16.73 16.73C16.35 17.12 15.98 17.35 15.47 17.55C15.08 17.7 14.5 17.88 13.43 17.93C12.27 17.98 11.93 18 8.99 18C6.06 18 5.72 17.98 4.56 17.93Z" fill="url(#paint_radial_93_16335_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                                <path id="Vector" d="M6.78 9.03C6.78 7.8 7.78 6.8 9.01 6.8C10.24 6.8 11.24 7.8 11.24 9.03C11.24 10.26 10.24 11.26 9.01 11.26C7.78 11.26 6.78 10.26 6.78 9.03ZM5.58 9.03C5.58 10.93 7.12 12.47 9.01 12.47C10.91 12.47 12.45 10.93 12.45 9.03C12.45 7.14 10.91 5.6 9.01 5.6C7.12 5.6 5.58 7.14 5.58 9.03L5.58 9.03ZM11.78 5.46C11.78 5.62 11.83 5.78 11.92 5.91C12 6.04 12.13 6.14 12.28 6.2C12.42 6.27 12.58 6.28 12.74 6.25C12.89 6.22 13.04 6.14 13.15 6.03C13.26 5.92 13.34 5.78 13.37 5.62C13.4 5.46 13.39 5.3 13.32 5.16C13.26 5.01 13.16 4.89 13.03 4.8C12.9 4.71 12.74 4.66 12.58 4.66L12.58 4.66C12.37 4.66 12.17 4.75 12.02 4.9C11.87 5.05 11.78 5.25 11.78 5.46ZM6.31 14.48C5.66 14.45 5.31 14.34 5.07 14.25C4.76 14.12 4.53 13.98 4.3 13.75C4.07 13.51 3.92 13.29 3.8 12.98C3.71 12.74 3.6 12.39 3.57 11.74C3.54 11.03 3.53 10.82 3.53 9.03C3.53 7.25 3.54 7.04 3.57 6.33C3.6 5.68 3.71 5.33 3.8 5.09C3.92 4.78 4.07 4.55 4.3 4.32C4.53 4.09 4.76 3.94 5.07 3.82C5.31 3.73 5.66 3.62 6.31 3.59C7.02 3.56 7.23 3.55 9.01 3.55C10.8 3.55 11.01 3.56 11.72 3.59C12.37 3.62 12.72 3.73 12.96 3.82C13.27 3.94 13.49 4.09 13.73 4.32C13.96 4.55 14.11 4.78 14.23 5.09C14.32 5.32 14.43 5.68 14.46 6.33C14.49 7.04 14.5 7.25 14.5 9.03C14.5 10.82 14.49 11.03 14.46 11.74C14.43 12.39 14.32 12.74 14.23 12.98C14.11 13.29 13.96 13.51 13.73 13.75C13.49 13.98 13.27 14.13 12.96 14.25C12.72 14.34 12.37 14.45 11.72 14.48C11.01 14.51 10.8 14.52 9.01 14.52C7.23 14.52 7.02 14.51 6.31 14.48L6.31 14.48ZM6.26 2.39C5.54 2.42 5.06 2.53 4.63 2.7C4.19 2.87 3.82 3.1 3.45 3.47C3.08 3.84 2.85 4.21 2.68 4.65C2.51 5.08 2.4 5.56 2.37 6.28C2.33 6.99 2.33 7.22 2.33 9.03C2.33 10.85 2.33 11.08 2.37 11.79C2.4 12.5 2.51 12.99 2.68 13.41C2.85 13.85 3.08 14.23 3.45 14.6C3.82 14.97 4.19 15.2 4.63 15.37C5.06 15.53 5.54 15.65 6.26 15.68C6.97 15.71 7.2 15.72 9.01 15.72C10.83 15.72 11.06 15.71 11.77 15.68C12.48 15.65 12.97 15.53 13.39 15.37C13.83 15.2 14.21 14.97 14.58 14.6C14.95 14.23 15.18 13.85 15.35 13.41C15.51 12.99 15.63 12.5 15.66 11.79C15.69 11.08 15.7 10.85 15.7 9.03C15.7 7.22 15.69 6.99 15.66 6.28C15.63 5.56 15.51 5.08 15.35 4.65C15.18 4.21 14.95 3.84 14.58 3.47C14.21 3.1 13.83 2.87 13.39 2.7C12.97 2.53 12.48 2.42 11.77 2.39C11.06 2.35 10.83 2.35 9.01 2.35C7.2 2.35 6.97 2.35 6.26 2.39L6.26 2.39Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                            </g>
+                                        </svg>
+                                    </a>   
+                                </div>
+                                <button class="header_wrapper-callback">
+                                    Обратный звонок
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header_wrapper-down">
+                        <div class="container">
+                            <div class="header_wrapper-down-container">
+                                <div class="header_wrapper-down-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_981_10988)">
+                                        <path d="M8.08811 0.323999C7.98011 0.516001 7.64411 1.176 7.34411 1.8L6.78011 2.928L5.60411 3.252C4.51211 3.564 4.39211 3.624 3.88811 4.188C3.31211 4.836 3.36011 4.812 1.33211 5.112L-0.0358887 5.316L0.0361113 6.132C0.108111 7.02 0.456111 7.92 0.876111 8.376C1.42811 8.964 2.00411 9.144 3.72011 9.264C4.60811 9.324 5.37611 9.408 5.41211 9.456C5.44811 9.504 5.92811 10.86 6.46811 12.48L7.46411 15.42L6.21611 18.228C5.53211 19.776 4.88411 21.084 4.78811 21.132C4.69211 21.18 4.39211 21.276 4.11611 21.348C3.46811 21.528 2.90411 22.008 2.62811 22.62C2.34011 23.244 2.34011 23.46 2.64011 23.76C2.86811 23.988 3.03611 24 5.92811 24H8.96411L8.91611 23.712C8.86811 23.496 8.94011 23.376 9.19211 23.208C9.37211 23.076 9.73211 22.788 9.98411 22.548C10.5601 21.996 10.5721 21.648 10.0561 20.64C9.68411 19.932 9.66011 19.8 9.67211 18.732C9.67211 18.096 9.72011 17.148 9.78011 16.62C9.90011 15.396 9.73211 15.012 8.89211 14.592C8.13611 14.208 7.68011 13.656 7.68011 13.14C7.68011 12.792 7.72811 12.732 8.04011 12.66C8.25611 12.612 8.58011 12.36 8.88011 12C9.21611 11.604 9.52811 11.364 9.87611 11.244L10.3801 11.076L10.4401 10.284L10.5001 9.48L11.5441 10.392C12.7201 11.4 13.1161 12.072 13.5001 13.62C13.8961 15.24 14.4121 15.84 16.2001 16.752C18.1201 17.724 19.1761 19.008 19.4041 20.664C19.4881 21.216 19.7761 21.276 20.2201 20.82C20.6521 20.388 20.6041 19.776 20.0161 18.072C19.5601 16.776 19.5001 16.488 19.4761 15.384L19.4521 14.148L18.1921 12.792C16.7161 11.184 16.1881 10.692 14.5321 9.36C13.0441 8.172 12.0841 7.224 11.7001 6.552C11.5441 6.276 11.0881 5.292 10.6921 4.344C9.62411 1.86 8.67611 0 8.44811 0C8.35211 0 8.18411 0.143999 8.08811 0.323999Z" fill="white"/>
+                                        <path d="M21.2881 10.1402C21.2521 10.2362 21.2761 10.5842 21.3481 10.9202C21.4201 11.2562 21.4801 11.9162 21.4801 12.3962C21.4801 13.2242 21.4921 13.2722 21.8401 13.4642C22.1161 13.6202 22.2001 13.7522 22.2001 14.0282C22.2001 14.4962 21.8641 14.6882 21.2521 14.5802C20.8321 14.5082 20.7841 14.5322 20.7121 14.8202C20.6041 15.2282 20.8321 16.4162 21.2041 17.4602C21.9001 19.4162 21.9961 20.2322 21.6121 21.0602C21.3121 21.7082 20.8921 22.0682 20.1601 22.3202C19.7161 22.4642 19.4641 22.6442 19.2121 23.0162C18.9601 23.3522 18.6721 23.5682 18.2161 23.7482L17.5801 24.0122L19.0441 23.9642C20.3401 23.9162 20.5801 23.8802 21.1801 23.5922C21.9841 23.1842 22.6081 22.4282 22.8721 21.5042C23.1361 20.6162 23.0521 19.3082 22.6921 18.5642C22.4041 17.9642 22.4041 17.9762 22.9801 17.2082C23.6881 16.2842 23.9281 15.5402 23.9281 14.3402C23.9281 13.5002 23.8681 13.1162 23.6521 12.6002C23.3281 11.8082 22.4041 10.3922 22.0441 10.1402C21.7201 9.91221 21.3721 9.91221 21.2881 10.1402Z" fill="white"/>
+                                        <path d="M13.248 19.008C12.564 19.308 12.276 19.86 11.832 21.708C11.604 22.644 11.328 23.544 11.232 23.7L11.04 24H11.604C12.096 24 12.144 23.976 11.952 23.844C11.76 23.712 11.748 23.64 11.868 23.412C12.048 23.076 12.468 22.92 13.164 22.92H13.716L13.224 22.56C12.552 22.08 12.312 21.588 12.408 20.904C12.564 19.764 13.356 19.104 14.58 19.068C15.06 19.056 15.12 19.032 14.88 18.96C14.412 18.804 13.656 18.828 13.248 19.008Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_981_10988">
+                                            <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>                                      
+                                    <p>
+                                        Территория ZOO
+                                    </p>                            
+                                </div>
+                                <div class="header_wrapper-down-search">
+                                    <div class="header_wrapper-down-search-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 12C5.791 12 4 10.209 4 8C4 5.791 5.791 4 8 4C10.209 4 12 5.791 12 8C12 10.209 10.209 12 8 12ZM17.707 16.293L12.887 11.473C13.585 10.492 14 9.296 14 8C14 4.687 11.313 2 8 2C4.687 2 2 4.687 2 8C2 11.313 4.687 14 8 14C9.296 14 10.492 13.585 11.473 12.887L16.293 17.707C16.488 17.902 16.744 18 17 18C17.256 18 17.512 17.902 17.707 17.707C18.098 17.316 18.098 16.684 17.707 16.293Z" fill="#5C5F62"/>
+                                        </svg>                                                                                   
+                                    </div>                                           
+                                        <input type="text" placeholder="Search">                                        
+                                </div>
+                                <div class="header_wrapper-down-navigation">
+                                    <nav>
+                                        <ul class="header_wrapper-down-navigation_list">
+                                            <li  class="header_wrapper-down-navigation_item">
+                                                <a href="#">Главная</a>
+                                            </li>
+                                            <li class="header_wrapper-down-navigation_item">
+                                                <a href="#">Каталог</a>
+                                            </li>
+                                            <!-- <li class="header_wrapper-down-navigation_item">
+                                                <a href="#">Доставка и оплата</a>
+                                            </li> -->
+                                            <li class="header_wrapper-down-navigation_item">
+                                                <a href="#">Акции</a>
+                                            </li>
+                                            <li class="header_wrapper-down-navigation_item">
+                                                <a href="#">Статьи</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header_wrapper-down-korzina">                            
+                                    <svg width="18.000000" height="20.000000" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                        <defs/>
+                                        <path id="Primary fill" d="M0 1C0 0.44 0.44 0 1 0L2.5 0C3.34 0 4.01 0.67 4.01 1.5L4.01 2.06L16.58 2.96C17.46 3.02 18.1 3.81 17.98 4.67L17.11 10.71C17.01 11.45 16.37 12 15.62 12L4.01 12L4.01 14L14.05 14C15.72 14 17.06 15.34 17.06 17C17.06 18.65 15.72 20 14.05 20C12.39 20 11.04 18.65 11.04 17C11.04 16.64 11.1 16.31 11.21 16L5.85 16C5.96 16.31 6.02 16.64 6.02 17C6.02 18.65 4.67 20 3.01 20C1.34 20 0 18.65 0 17C0 15.69 0.83 14.58 2 14.17L2 3C2 3 2 2.99 2 2.99L2 2L1 2C0.44 2 0 1.55 0 1ZM4.01 4.06L4.01 10L15.19 10L15.92 4.93L4.01 4.06ZM13.05 17C13.05 16.44 13.5 16 14.05 16C14.61 16 15.06 16.44 15.06 17C15.06 17.55 14.61 18 14.05 18C13.5 18 13.05 17.55 13.05 17ZM2 17C2 16.44 2.45 16 3.01 16C3.56 16 4.01 16.44 4.01 17C4.01 17.55 3.56 18 3.01 18C2.45 18 2 17.55 2 17Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>    
+                                    <P>0</P>            
+                                </div> 
+                            </div>   
+                        </div>    
+                    </div>
+                </div>                                     
+        </header>
+        <main>
+            <section class="category">
+                <div class="container">
+                    <ul class="category_list">                        
+                        <li  class="category-item"> 
+                            <a href="#">                               
+                                <img src="./img/dog.png" alt="">
+                                <p>Собаки</p>   
+                            </a>                         
+                        </li>
+                        <li  class="category-item"> 
+                            <a href="#">                               
+                                <img src="./img/cat.png" alt="">
+                                <p>Кошки</p>   
+                            </a>                         
+                        </li>
+                        <li  class="category-item"> 
+                            <a href="#">                               
+                                <img src="./img/rodents.png" alt="">
+                                <p>Грызуны</p>   
+                            </a>                         
+                        </li>
+                        <li  class="category-item"> 
+                            <a href="#">                               
+                                <img src="./img/birds.png" alt="">
+                                <p>Птицы</p>   
+                            </a>                         
+                        </li>
+                        <li  class="category-item"> 
+                            <a href="#">                               
+                                <img src="./img/fish.png" alt="">
+                                <p>Рыбки</p>   
+                            </a>                         
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="reklama"> 
+                <div class="container">
+                    <div class="reklama-title">
+                        <div class="reklama-title-left">
+                            <h1>
+                                Всё, что нужно вашему питомцу в 9 мин от метро Малиновка
+                            </h1>
+                            <div class="mini">
+                                <div class="mini-left">
+                                    <p> 
+                                        <strong>Более 5000 товаров</strong> для животных в наличии
+                                    </p>
+                                </div>                               
+                                <div class="mini-right">
+                                    <p>
+                                        <strong>Вкусные сюрпризы</strong> для ваших питомцев в магазине
+                                    </p>
+                                </div>
+                            </div>
+                            <button><p>Выбрать товар</p></button>
+                        </div>
+                        <div class="reklama-title-right">
+                            <img src="./img/animals.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>  
+            <section class="skidki">
+                <div class="container">
+                    <div class="skidki_title">
+                        <div class="skidki_title-left">                            
+                                <p>Скидка 25% на первый заказ любого товара на сумму от 50BYN</p>                            
+                                <button>Перейти к выбору товара</button>
+                        </div>
+                        <div class="skidki_title-right">
+                            <p>Получите игрушку в подарок при сумме заказа от 200BYN</p>
+                            <button>Перейти к выбору товара</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="popular_goods">
+                <div class="container">
+                    <div class="popular_goods-header">
+                        <h2>
+                            Популярные товары
+                        </h2>
+                        <div class="popular_goods-header-arrow">
+                            <button type="button" class="">
+                                <svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs/>
+                                    <path d="M12 16C11.74 16 11.48 15.9 11.29 15.7L6.29 10.7C5.9 10.31 5.9 9.68 6.29 9.29L11.29 4.29C11.68 3.9 12.31 3.9 12.7 4.29C13.09 4.68 13.09 5.31 12.7 5.7L8.41 10L12.7 14.29C13.09 14.68 13.09 15.31 12.7 15.7C12.51 15.9 12.25 16 12 16Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                </svg> 
+                            </button> 
+                            <button type="button" class="">              
+                                <svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs/>
+                                    <path d="M8 16C7.74 16 7.48 15.9 7.29 15.7C6.9 15.31 6.9 14.68 7.29 14.29L11.58 10L7.29 5.7C6.9 5.31 6.9 4.68 7.29 4.29C7.68 3.9 8.31 3.9 8.7 4.29L13.7 9.29C14.09 9.68 14.09 10.31 13.7 10.7L8.7 15.7C8.51 15.9 8.25 16 8 16Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="cart_product-list">
+                        <li>
+                            <article class="cart_product">
+                            <div class="cart_product-img">
+                                <img src="./img/image22.png" alt="">
+                            </div>
+                            <h3 class="cart_product-title">
+                                <a href="#">
+                                    Kонсервы ROYAL CANIN STERILISED для взрослых кастрированных котов..
+                                </a>
+                            </h3>
+                            <ul class="cart_product-weight-list">
+                                <li>0,2 кг.</li>
+                                <li>0,4 кг.</li>
+                                <li>1,2 кг.</li>
+                                <li>2 кг.</li>
+                                <li>4 кг.</li>
+                                <li>10 кг.</li>
+                                <li>Задать вес</li> 
+                            </ul>
+                            <div class="cart_product-price-wrapper">
+                                <p>
+                                    95 BYN
+                                </p>
+                                <div>
+                                    <svg width="7.203125" height="7.203369" viewBox="0 0 7.20312 7.20337" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Label" d="M4.31 7.2L2.88 7.2L2.88 4.31L-0.01 4.31L-0.01 2.88L2.88 2.88L2.88 0L4.31 0L4.31 2.88L7.2 2.88L7.2 4.31L4.31 4.31L4.31 7.2Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>
+                                    <svg width="18.000000" height="20.000000" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Primary fill" d="M0 1C0 0.44 0.44 0 1 0L2.5 0C3.34 0 4.01 0.67 4.01 1.5L4.01 2.06L16.58 2.96C17.46 3.02 18.1 3.81 17.98 4.67L17.11 10.71C17.01 11.45 16.37 12 15.62 12L4.01 12L4.01 14L14.05 14C15.72 14 17.06 15.34 17.06 17C17.06 18.65 15.72 20 14.05 20C12.39 20 11.04 18.65 11.04 17C11.04 16.64 11.1 16.31 11.21 16L5.85 16C5.96 16.31 6.02 16.64 6.02 17C6.02 18.65 4.67 20 3.01 20C1.34 20 0 18.65 0 17C0 15.69 0.83 14.58 2 14.17L2 3C2 3 2 2.99 2 2.99L2 2L1 2C0.44 2 0 1.55 0 1ZM4.01 4.06L4.01 10L15.19 10L15.92 4.93L4.01 4.06ZM13.05 17C13.05 16.44 13.5 16 14.05 16C14.61 16 15.06 16.44 15.06 17C15.06 17.55 14.61 18 14.05 18C13.5 18 13.05 17.55 13.05 17ZM2 17C2 16.44 2.45 16 3.01 16C3.56 16 4.01 16.44 4.01 17C4.01 17.55 3.56 18 3.01 18C2.45 18 2 17.55 2 17Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>                
+                                </div>            
+                            </div>
+                            <button class="cart_product-buy">
+                                Купить в 1 клик
+                            </button>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="cart_product">
+                            <div class="cart_product-img">
+                                <img src="./img/image22.png" alt="">
+                            </div>
+                            <h3 class="cart_product-title">
+                                <a href="#">
+                                    Kонсервы ROYAL CANIN STERILISED для взрослых кастрированных котов..
+                                </a>
+                            </h3>
+                            <ul class="cart_product-weight-list">
+                                <li>0,2 кг.</li>
+                                <li>0,4 кг.</li>
+                                <li>1,2 кг.</li>
+                                <li>2 кг.</li>
+                                <li>4 кг.</li>
+                                <li>10 кг.</li>
+                                <li>Задать вес</li> 
+                            </ul>
+                            <div class="cart_product-price-wrapper">
+                                <p>
+                                    95 BYN
+                                </p>
+                                <div>
+                                    <svg width="7.203125" height="7.203369" viewBox="0 0 7.20312 7.20337" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Label" d="M4.31 7.2L2.88 7.2L2.88 4.31L-0.01 4.31L-0.01 2.88L2.88 2.88L2.88 0L4.31 0L4.31 2.88L7.2 2.88L7.2 4.31L4.31 4.31L4.31 7.2Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>
+                                    <svg width="18.000000" height="20.000000" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Primary fill" d="M0 1C0 0.44 0.44 0 1 0L2.5 0C3.34 0 4.01 0.67 4.01 1.5L4.01 2.06L16.58 2.96C17.46 3.02 18.1 3.81 17.98 4.67L17.11 10.71C17.01 11.45 16.37 12 15.62 12L4.01 12L4.01 14L14.05 14C15.72 14 17.06 15.34 17.06 17C17.06 18.65 15.72 20 14.05 20C12.39 20 11.04 18.65 11.04 17C11.04 16.64 11.1 16.31 11.21 16L5.85 16C5.96 16.31 6.02 16.64 6.02 17C6.02 18.65 4.67 20 3.01 20C1.34 20 0 18.65 0 17C0 15.69 0.83 14.58 2 14.17L2 3C2 3 2 2.99 2 2.99L2 2L1 2C0.44 2 0 1.55 0 1ZM4.01 4.06L4.01 10L15.19 10L15.92 4.93L4.01 4.06ZM13.05 17C13.05 16.44 13.5 16 14.05 16C14.61 16 15.06 16.44 15.06 17C15.06 17.55 14.61 18 14.05 18C13.5 18 13.05 17.55 13.05 17ZM2 17C2 16.44 2.45 16 3.01 16C3.56 16 4.01 16.44 4.01 17C4.01 17.55 3.56 18 3.01 18C2.45 18 2 17.55 2 17Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>                
+                                </div>            
+                            </div>
+                            <button class="cart_product-buy">
+                                Купить в 1 клик
+                            </button>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="cart_product">
+                            <div class="cart_product-img">
+                                <img src="./img/image22.png" alt="">
+                            </div>
+                            <h3 class="cart_product-title">
+                                <a href="#">
+                                    Kонсервы ROYAL CANIN STERILISED для взрослых кастрированных котов..
+                                </a>
+                            </h3>
+                            <ul class="cart_product-weight-list">
+                                <li>0,2 кг.</li>
+                                <li>0,4 кг.</li>
+                                <li>1,2 кг.</li>
+                                <li>2 кг.</li>
+                                <li>4 кг.</li>
+                                <li>10 кг.</li>
+                                <li>Задать вес</li> 
+                            </ul>
+                            <div class="cart_product-price-wrapper">
+                                <p>
+                                    95 BYN
+                                </p>
+                                <div>
+                                    <svg width="7.203125" height="7.203369" viewBox="0 0 7.20312 7.20337" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Label" d="M4.31 7.2L2.88 7.2L2.88 4.31L-0.01 4.31L-0.01 2.88L2.88 2.88L2.88 0L4.31 0L4.31 2.88L7.2 2.88L7.2 4.31L4.31 4.31L4.31 7.2Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>
+                                    <svg width="18.000000" height="20.000000" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Primary fill" d="M0 1C0 0.44 0.44 0 1 0L2.5 0C3.34 0 4.01 0.67 4.01 1.5L4.01 2.06L16.58 2.96C17.46 3.02 18.1 3.81 17.98 4.67L17.11 10.71C17.01 11.45 16.37 12 15.62 12L4.01 12L4.01 14L14.05 14C15.72 14 17.06 15.34 17.06 17C17.06 18.65 15.72 20 14.05 20C12.39 20 11.04 18.65 11.04 17C11.04 16.64 11.1 16.31 11.21 16L5.85 16C5.96 16.31 6.02 16.64 6.02 17C6.02 18.65 4.67 20 3.01 20C1.34 20 0 18.65 0 17C0 15.69 0.83 14.58 2 14.17L2 3C2 3 2 2.99 2 2.99L2 2L1 2C0.44 2 0 1.55 0 1ZM4.01 4.06L4.01 10L15.19 10L15.92 4.93L4.01 4.06ZM13.05 17C13.05 16.44 13.5 16 14.05 16C14.61 16 15.06 16.44 15.06 17C15.06 17.55 14.61 18 14.05 18C13.5 18 13.05 17.55 13.05 17ZM2 17C2 16.44 2.45 16 3.01 16C3.56 16 4.01 16.44 4.01 17C4.01 17.55 3.56 18 3.01 18C2.45 18 2 17.55 2 17Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>                
+                                </div>            
+                            </div>
+                            <button class="cart_product-buy">
+                                Купить в 1 клик
+                            </button>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="cart_product">
+                            <div class="cart_product-img">
+                                <img src="./img/image22.png" alt="">
+                            </div>
+                            <h3 class="cart_product-title">
+                                <a href="#">
+                                    Kонсервы ROYAL CANIN STERILISED для взрослых кастрированных котов..
+                                </a>
+                            </h3>
+                            <ul class="cart_product-weight-list">
+                                <li>0,2 кг.</li>
+                                <li>0,4 кг.</li>
+                                <li>1,2 кг.</li>
+                                <li>2 кг.</li>
+                                <li>4 кг.</li>
+                                <li>10 кг.</li>
+                                <li>Задать вес</li> 
+                            </ul>
+                            <div class="cart_product-price-wrapper">
+                                <p>
+                                    95 BYN
+                                </p>
+                                <div>
+                                    <svg width="7.203125" height="7.203369" viewBox="0 0 7.20312 7.20337" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Label" d="M4.31 7.2L2.88 7.2L2.88 4.31L-0.01 4.31L-0.01 2.88L2.88 2.88L2.88 0L4.31 0L4.31 2.88L7.2 2.88L7.2 4.31L4.31 4.31L4.31 7.2Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>
+                                    <svg width="18.000000" height="20.000000" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Primary fill" d="M0 1C0 0.44 0.44 0 1 0L2.5 0C3.34 0 4.01 0.67 4.01 1.5L4.01 2.06L16.58 2.96C17.46 3.02 18.1 3.81 17.98 4.67L17.11 10.71C17.01 11.45 16.37 12 15.62 12L4.01 12L4.01 14L14.05 14C15.72 14 17.06 15.34 17.06 17C17.06 18.65 15.72 20 14.05 20C12.39 20 11.04 18.65 11.04 17C11.04 16.64 11.1 16.31 11.21 16L5.85 16C5.96 16.31 6.02 16.64 6.02 17C6.02 18.65 4.67 20 3.01 20C1.34 20 0 18.65 0 17C0 15.69 0.83 14.58 2 14.17L2 3C2 3 2 2.99 2 2.99L2 2L1 2C0.44 2 0 1.55 0 1ZM4.01 4.06L4.01 10L15.19 10L15.92 4.93L4.01 4.06ZM13.05 17C13.05 16.44 13.5 16 14.05 16C14.61 16 15.06 16.44 15.06 17C15.06 17.55 14.61 18 14.05 18C13.5 18 13.05 17.55 13.05 17ZM2 17C2 16.44 2.45 16 3.01 16C3.56 16 4.01 16.44 4.01 17C4.01 17.55 3.56 18 3.01 18C2.45 18 2 17.55 2 17Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>                
+                                </div>            
+                            </div>
+                            <button class="cart_product-buy">
+                                Купить в 1 клик
+                            </button>
+                            </article>
+                        </li>
+                    </ul>
+                    <div class="view_more-wrap">
+                        <a href="#" class="popular_goods-all" >
+                            Смотреть больше товаров
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="new_product">
+                <div class="container">
+                    <div class="popular_goods-header">
+                        <h2>
+                            Новинки
+                        </h2>
+                        <div class="popular_goods-header-arrow">
+                            <button type="button" class="1">
+                                <svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs/>
+                                    <path d="M12 16C11.74 16 11.48 15.9 11.29 15.7L6.29 10.7C5.9 10.31 5.9 9.68 6.29 9.29L11.29 4.29C11.68 3.9 12.31 3.9 12.7 4.29C13.09 4.68 13.09 5.31 12.7 5.7L8.41 10L12.7 14.29C13.09 14.68 13.09 15.31 12.7 15.7C12.51 15.9 12.25 16 12 16Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                </svg> 
+                            </button> 
+                            <button type="button" class="1">              
+                                <svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs/>
+                                    <path d="M8 16C7.74 16 7.48 15.9 7.29 15.7C6.9 15.31 6.9 14.68 7.29 14.29L11.58 10L7.29 5.7C6.9 5.31 6.9 4.68 7.29 4.29C7.68 3.9 8.31 3.9 8.7 4.29L13.7 9.29C14.09 9.68 14.09 10.31 13.7 10.7L8.7 15.7C8.51 15.9 8.25 16 8 16Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="cart_product-list">
+                        <li>
+                            <article class="cart_product ">
+                            <div class="cart_product-img">
+                                <img src="./img/image22.png" alt="">
+                            </div>
+                            <h3 class="cart_product-title">
+                                <a href="#">
+                                    Kонсервы ROYAL CANIN STERILISED для взрослых кастрированных котов..
+                                </a>
+                            </h3>
+                            <ul class="cart_product-weight-list">
+                                <li>0,2 кг.</li>
+                                <li>0,4 кг.</li>
+                                <li>1,2 кг.</li>
+                                <li>2 кг.</li>
+                                <li>4 кг.</li>
+                                <li>10 кг.</li>
+                                <li>Задать вес</li> 
+                            </ul>
+                            <div class="cart_product-price-wrapper">
+                                <p>
+                                    95 BYN
+                                </p>
+                                <div>
+                                    <svg width="7.203125" height="7.203369" viewBox="0 0 7.20312 7.20337" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Label" d="M4.31 7.2L2.88 7.2L2.88 4.31L-0.01 4.31L-0.01 2.88L2.88 2.88L2.88 0L4.31 0L4.31 2.88L7.2 2.88L7.2 4.31L4.31 4.31L4.31 7.2Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>
+                                    <svg width="18.000000" height="20.000000" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Primary fill" d="M0 1C0 0.44 0.44 0 1 0L2.5 0C3.34 0 4.01 0.67 4.01 1.5L4.01 2.06L16.58 2.96C17.46 3.02 18.1 3.81 17.98 4.67L17.11 10.71C17.01 11.45 16.37 12 15.62 12L4.01 12L4.01 14L14.05 14C15.72 14 17.06 15.34 17.06 17C17.06 18.65 15.72 20 14.05 20C12.39 20 11.04 18.65 11.04 17C11.04 16.64 11.1 16.31 11.21 16L5.85 16C5.96 16.31 6.02 16.64 6.02 17C6.02 18.65 4.67 20 3.01 20C1.34 20 0 18.65 0 17C0 15.69 0.83 14.58 2 14.17L2 3C2 3 2 2.99 2 2.99L2 2L1 2C0.44 2 0 1.55 0 1ZM4.01 4.06L4.01 10L15.19 10L15.92 4.93L4.01 4.06ZM13.05 17C13.05 16.44 13.5 16 14.05 16C14.61 16 15.06 16.44 15.06 17C15.06 17.55 14.61 18 14.05 18C13.5 18 13.05 17.55 13.05 17ZM2 17C2 16.44 2.45 16 3.01 16C3.56 16 4.01 16.44 4.01 17C4.01 17.55 3.56 18 3.01 18C2.45 18 2 17.55 2 17Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>                
+                                </div>            
+                            </div>
+                            <button class="cart_product-buy">
+                                Купить в 1 клик
+                            </button>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="cart_product ">
+                            <div class="cart_product-img">
+                                <img src="./img/image22.png" alt="">
+                            </div>
+                            <h3 class="cart_product-title">
+                                <a href="#">
+                                    Kонсервы ROYAL CANIN STERILISED для взрослых кастрированных котов..
+                                </a>
+                            </h3>
+                            <ul class="cart_product-weight-list">
+                                <li>0,2 кг.</li>
+                                <li>0,4 кг.</li>
+                                <li>1,2 кг.</li>
+                                <li>2 кг.</li>
+                                <li>4 кг.</li>
+                                <li>10 кг.</li>
+                                <li>Задать вес</li> 
+                            </ul>
+                            <div class="cart_product-price-wrapper">
+                                <p>
+                                    95 BYN
+                                </p>
+                                <div>
+                                    <svg width="7.203125" height="7.203369" viewBox="0 0 7.20312 7.20337" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Label" d="M4.31 7.2L2.88 7.2L2.88 4.31L-0.01 4.31L-0.01 2.88L2.88 2.88L2.88 0L4.31 0L4.31 2.88L7.2 2.88L7.2 4.31L4.31 4.31L4.31 7.2Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>
+                                    <svg width="18.000000" height="20.000000" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Primary fill" d="M0 1C0 0.44 0.44 0 1 0L2.5 0C3.34 0 4.01 0.67 4.01 1.5L4.01 2.06L16.58 2.96C17.46 3.02 18.1 3.81 17.98 4.67L17.11 10.71C17.01 11.45 16.37 12 15.62 12L4.01 12L4.01 14L14.05 14C15.72 14 17.06 15.34 17.06 17C17.06 18.65 15.72 20 14.05 20C12.39 20 11.04 18.65 11.04 17C11.04 16.64 11.1 16.31 11.21 16L5.85 16C5.96 16.31 6.02 16.64 6.02 17C6.02 18.65 4.67 20 3.01 20C1.34 20 0 18.65 0 17C0 15.69 0.83 14.58 2 14.17L2 3C2 3 2 2.99 2 2.99L2 2L1 2C0.44 2 0 1.55 0 1ZM4.01 4.06L4.01 10L15.19 10L15.92 4.93L4.01 4.06ZM13.05 17C13.05 16.44 13.5 16 14.05 16C14.61 16 15.06 16.44 15.06 17C15.06 17.55 14.61 18 14.05 18C13.5 18 13.05 17.55 13.05 17ZM2 17C2 16.44 2.45 16 3.01 16C3.56 16 4.01 16.44 4.01 17C4.01 17.55 3.56 18 3.01 18C2.45 18 2 17.55 2 17Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>                
+                                </div>            
+                            </div>
+                            <button class="cart_product-buy">
+                                Купить в 1 клик
+                            </button>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="cart_product ">
+                            <div class="cart_product-img">
+                                <img src="./img/image22.png" alt="">
+                            </div>
+                            <h3 class="cart_product-title">
+                                <a href="#">
+                                    Kонсервы ROYAL CANIN STERILISED для взрослых кастрированных котов..
+                                </a>
+                            </h3>
+                            <ul class="cart_product-weight-list">
+                                <li>0,2 кг.</li>
+                                <li>0,4 кг.</li>
+                                <li>1,2 кг.</li>
+                                <li>2 кг.</li>
+                                <li>4 кг.</li>
+                                <li>10 кг.</li>
+                                <li>Задать вес</li> 
+                            </ul>
+                            <div class="cart_product-price-wrapper">
+                                <p>
+                                    95 BYN
+                                </p>
+                                <div>
+                                    <svg width="7.203125" height="7.203369" viewBox="0 0 7.20312 7.20337" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Label" d="M4.31 7.2L2.88 7.2L2.88 4.31L-0.01 4.31L-0.01 2.88L2.88 2.88L2.88 0L4.31 0L4.31 2.88L7.2 2.88L7.2 4.31L4.31 4.31L4.31 7.2Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>
+                                    <svg width="18.000000" height="20.000000" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Primary fill" d="M0 1C0 0.44 0.44 0 1 0L2.5 0C3.34 0 4.01 0.67 4.01 1.5L4.01 2.06L16.58 2.96C17.46 3.02 18.1 3.81 17.98 4.67L17.11 10.71C17.01 11.45 16.37 12 15.62 12L4.01 12L4.01 14L14.05 14C15.72 14 17.06 15.34 17.06 17C17.06 18.65 15.72 20 14.05 20C12.39 20 11.04 18.65 11.04 17C11.04 16.64 11.1 16.31 11.21 16L5.85 16C5.96 16.31 6.02 16.64 6.02 17C6.02 18.65 4.67 20 3.01 20C1.34 20 0 18.65 0 17C0 15.69 0.83 14.58 2 14.17L2 3C2 3 2 2.99 2 2.99L2 2L1 2C0.44 2 0 1.55 0 1ZM4.01 4.06L4.01 10L15.19 10L15.92 4.93L4.01 4.06ZM13.05 17C13.05 16.44 13.5 16 14.05 16C14.61 16 15.06 16.44 15.06 17C15.06 17.55 14.61 18 14.05 18C13.5 18 13.05 17.55 13.05 17ZM2 17C2 16.44 2.45 16 3.01 16C3.56 16 4.01 16.44 4.01 17C4.01 17.55 3.56 18 3.01 18C2.45 18 2 17.55 2 17Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>                
+                                </div>            
+                            </div>
+                            <button class="cart_product-buy">
+                                Купить в 1 клик
+                            </button>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="cart_product">
+                            <div class="cart_product-img">
+                                <img src="./img/image22.png" alt="">
+                            </div>
+                            <h3 class="cart_product-title">
+                                <a href="#">
+                                    Kонсервы ROYAL CANIN STERILISED для взрослых кастрированных котов..
+                                </a>
+                            </h3>
+                            <ul class="cart_product-weight-list">
+                                <li>0,2 кг.</li>
+                                <li>0,4 кг.</li>
+                                <li>1,2 кг.</li>
+                                <li>2 кг.</li>
+                                <li>4 кг.</li>
+                                <li>10 кг.</li>
+                                <li>Задать вес</li> 
+                            </ul>
+                            <div class="cart_product-price-wrapper">
+                                <p>
+                                    95 BYN
+                                </p>
+                                <div>
+                                    <svg width="7.203125" height="7.203369" viewBox="0 0 7.20312 7.20337" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Label" d="M4.31 7.2L2.88 7.2L2.88 4.31L-0.01 4.31L-0.01 2.88L2.88 2.88L2.88 0L4.31 0L4.31 2.88L7.2 2.88L7.2 4.31L4.31 4.31L4.31 7.2Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>
+                                    <svg width="18.000000" height="20.000000" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <desc>
+                                                Created with Pixso.
+                                        </desc>
+                                        <defs/>
+                                        <path id="Primary fill" d="M0 1C0 0.44 0.44 0 1 0L2.5 0C3.34 0 4.01 0.67 4.01 1.5L4.01 2.06L16.58 2.96C17.46 3.02 18.1 3.81 17.98 4.67L17.11 10.71C17.01 11.45 16.37 12 15.62 12L4.01 12L4.01 14L14.05 14C15.72 14 17.06 15.34 17.06 17C17.06 18.65 15.72 20 14.05 20C12.39 20 11.04 18.65 11.04 17C11.04 16.64 11.1 16.31 11.21 16L5.85 16C5.96 16.31 6.02 16.64 6.02 17C6.02 18.65 4.67 20 3.01 20C1.34 20 0 18.65 0 17C0 15.69 0.83 14.58 2 14.17L2 3C2 3 2 2.99 2 2.99L2 2L1 2C0.44 2 0 1.55 0 1ZM4.01 4.06L4.01 10L15.19 10L15.92 4.93L4.01 4.06ZM13.05 17C13.05 16.44 13.5 16 14.05 16C14.61 16 15.06 16.44 15.06 17C15.06 17.55 14.61 18 14.05 18C13.5 18 13.05 17.55 13.05 17ZM2 17C2 16.44 2.45 16 3.01 16C3.56 16 4.01 16.44 4.01 17C4.01 17.55 3.56 18 3.01 18C2.45 18 2 17.55 2 17Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>                
+                                </div>            
+                            </div>
+                            <button class="cart_product-buy">
+                                Купить в 1 клик
+                            </button>
+                            </article>
+                        </li>
+                    </ul>
+                    <div class="view_more-wrap">
+                        <a href="#" class="popular_goods-all" >
+                            Смотреть больше товаров
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="popular_brand">
+                <div class="container">
+                    <div class="popular_brand-list">
+                    <h2>Популярные бренды</h2>
+                        <ul>
+                            <li><img src="./img/1.png" alt=""></li>
+                            <li><img src="./img/2.png" alt=""></li>
+                            <li><img src="./img/3.png" alt=""></li>
+                            <li><img src="./img/4.png" alt=""></li>
+                            <li><img src="./img/5.png" alt=""></li>
+                            <li><img src="./img/6.png" alt=""></li>                            
+                        
+                            <li><img src="./img/7.png" alt=""></li>
+                            <li><img src="./img/8.png" alt=""></li>
+                            <li><img src="./img/9.png" alt=""></li>
+                            <li><img src="./img/10.png" alt=""></li>
+                            <li><img src="./img/11.png" alt=""></li>
+                            <li><img src="./img/12.png" alt=""></li>  
+                        
+                            <li><img src="./img/13.png" alt=""></li>
+                            <li><img src="./img/14.png" alt=""></li>
+                            <li><img src="./img/15.png" alt=""></li>
+                            <li><img src="./img/16.png" alt=""></li>
+                            <li><img src="./img/17.png" alt=""></li>
+                            <li><img src="./img/18.png" alt=""></li>  
+                        </ul>
+                        <div class="view_more-wrap">
+                            <a href="#" class="popular_goods-all" >
+                                Смотреть больше брендов
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="otziv">
+                <div class="container">
+                    <div class="otziv_content">
+                        
+                        <div class="otziv_title">
+                            <h2>Отзывы о магазине</h2>
+                            <h3>Меженная Марина Мельников Руслан</h3>
+                            <p>Мы являемся хозяевами замечательного голден ретривера по кличке Умка. 
+                                Своего пса мы очень любим, хотим видеть его красивым и здоровым, а потому к выбору корма подошли ответственно: 
+                                прочитали соответствующую литературу, изучили составы различных кормов, проконсультировались у заводчиков.
+                                В результате свой выбор остановили на Акане: это сбалансированный корм с высоким содержанием протеинов,
+                                но без «разбухающих» зерновых культур. Сейчас Умке два с половиной года и в течение последних полутора лет
+                                мы кормим его «Acana Grasslands» с лососем и ягненком. Да, корм недешевый, но мы ни разу не пожалели о своем выборе: 
+                                Умка в отличной форме, а главное – он получает все необходимые питательные вещества и микроэлементы в нужном количестве. 
+                                Аллергических реакций на корм замечено не было. Вобщем, кормом мы довольны!</p>
+                                <div class="otziv-contact">
+                                    <div>
+                                        <svg width="11.078613" height="15.826660" viewBox="0 0 11.0786 15.8267" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs/>
+                                            <path id="Primary fill" d="M0 1.18C0 0.53 0.53 0 1.18 0L9.89 0C10.54 0 11.07 0.53 11.07 1.18L11.07 14.63C11.07 15.29 10.54 15.82 9.89 15.82L1.18 15.82C0.53 15.82 0 15.29 0 14.63L0 1.18ZM1.58 1.58L9.49 1.58L9.49 12.66L1.58 12.66L1.58 1.58ZM4.74 13.45C4.31 13.45 3.95 13.8 3.95 14.24C3.95 14.68 4.31 15.03 4.74 15.03L6.33 15.03C6.76 15.03 7.12 14.68 7.12 14.24C7.12 13.8 6.76 13.45 6.33 13.45L4.74 13.45Z" fill="#8C9196" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                        </svg>
+                                        <p>+375 44 672 23 43</p>
+                                    </div>
+                                    <p>Питомец: собака умка</p>
+                                </div>
+                        </div>
+                        <div class="otziv-next">
+                            <div class="popular_goods-header-arrow">
+                                <button type="button" class="1">
+                                    <svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path d="M12 16C11.74 16 11.48 15.9 11.29 15.7L6.29 10.7C5.9 10.31 5.9 9.68 6.29 9.29L11.29 4.29C11.68 3.9 12.31 3.9 12.7 4.29C13.09 4.68 13.09 5.31 12.7 5.7L8.41 10L12.7 14.29C13.09 14.68 13.09 15.31 12.7 15.7C12.51 15.9 12.25 16 12 16Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg> 
+                                </button> 
+                                <p>1 из 9</p>
+                                <button type="button" class="1">              
+                                    <svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path d="M8 16C7.74 16 7.48 15.9 7.29 15.7C6.9 15.31 6.9 14.68 7.29 14.29L11.58 10L7.29 5.7C6.9 5.31 6.9 4.68 7.29 4.29C7.68 3.9 8.31 3.9 8.7 4.29L13.7 9.29C14.09 9.68 14.09 10.31 13.7 10.7L8.7 15.7C8.51 15.9 8.25 16 8 16Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="useful_articles">
+                <div class="container">
+                    <div class="userful_articles-title">
+                        <div class="useful_articles-top">
+                            <h2>
+                                Полезные статьи
+                            </h2>
+                            <div class="popular_goods-header-arrow">
+                                <button type="button" class="1">
+                                    <svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path d="M12 16C11.74 16 11.48 15.9 11.29 15.7L6.29 10.7C5.9 10.31 5.9 9.68 6.29 9.29L11.29 4.29C11.68 3.9 12.31 3.9 12.7 4.29C13.09 4.68 13.09 5.31 12.7 5.7L8.41 10L12.7 14.29C13.09 14.68 13.09 15.31 12.7 15.7C12.51 15.9 12.25 16 12 16Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg> 
+                                </button> 
+                                <button type="button" class="1">              
+                                    <svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs/>
+                                        <path d="M8 16C7.74 16 7.48 15.9 7.29 15.7C6.9 15.31 6.9 14.68 7.29 14.29L11.58 10L7.29 5.7C6.9 5.31 6.9 4.68 7.29 4.29C7.68 3.9 8.31 3.9 8.7 4.29L13.7 9.29C14.09 9.68 14.09 10.31 13.7 10.7L8.7 15.7C8.51 15.9 8.25 16 8 16Z" fill="#5C5F62" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="useful_articles-list">
+                            <li>
+                                <img src="./img/korm.png" alt="">
+                                <div class="useful_articles-list-title">
+                                    <h3>
+                                        Обзор корма Hills (Хиллс) для собак
+                                    </h3>
+                                    <p>
+                                        Продукция чешской компании «Хиллс» известна многим владельцам четвероногих питомцев. Она давно зарекомендовала себя на отечественном рынке. Рационы представлены...
+                                    </p>
+                                    <div class="useful_articles-list-data">
+                                        <div class="">
+                                            <svg width="12.799805" height="12.800003" viewBox="0 0 12.7998 12.8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs/>
+                                                <path id="Primary fill" d="M6.39 12.8C2.87 12.8 0 9.92 0 6.4C0 2.87 2.87 0 6.39 0C9.92 0 12.79 2.87 12.79 6.4C12.79 9.92 9.92 12.8 6.39 12.8ZM8.23 9.03C8.02 9.03 7.82 8.95 7.66 8.8L5.83 6.96C5.68 6.81 5.6 6.61 5.6 6.4L5.6 3.2C5.6 2.75 5.95 2.4 6.39 2.4C6.84 2.4 7.2 2.75 7.2 3.2L7.2 6.06L8.79 7.66C9.11 7.98 9.11 8.48 8.79 8.8C8.64 8.95 8.43 9.03 8.23 9.03Z" fill="#8C9196" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                            </svg>
+                                            <span>Время чтения: 5 мин.</span>
+                                        </div>
+                                        <div class="">
+                                            <svg width="12.799805" height="12.800003" viewBox="0 0 12.7998 12.8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs/>
+                                                <path id="Primary fill" d="M11.6 1.6C12.26 1.6 12.79 2.13 12.79 2.8L12.79 11.6C12.79 12.26 12.26 12.8 11.6 12.8L1.2 12.8C0.53 12.8 0 12.26 0 11.6L0 2.8C0 2.13 0.53 1.6 1.2 1.6L2.39 1.6L2.39 0.8C2.39 0.35 2.75 0 3.2 0C3.64 0 4 0.35 4 0.8L4 1.6L8.79 1.6L8.79 0.8C8.79 0.35 9.15 0 9.6 0C10.04 0 10.39 0.35 10.39 0.8L10.39 1.6L11.6 1.6ZM11.2 4.8L1.6 4.8L1.6 11.2L11.2 11.2L11.2 4.8Z" fill="#8C9196" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                            </svg>
+                                            <span>17 марта 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/grass.png" alt="">
+                                <div class="useful_articles-list-title">
+                                    <h3>
+                                        Какая трава полезна для кошек?
+                                    </h3>
+                                    <p>
+                                        Приводя в дом кошку, человек полностью берет на себя ответственность за ее здоровье и воспитание. Неопытные хозяева сначала задумываются о питании нового члена семь...
+                                    </p>
+                                    <div class="useful_articles-list-data">
+                                        <div class="">
+                                            <svg width="12.799805" height="12.800003" viewBox="0 0 12.7998 12.8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs/>
+                                                <path id="Primary fill" d="M6.39 12.8C2.87 12.8 0 9.92 0 6.4C0 2.87 2.87 0 6.39 0C9.92 0 12.79 2.87 12.79 6.4C12.79 9.92 9.92 12.8 6.39 12.8ZM8.23 9.03C8.02 9.03 7.82 8.95 7.66 8.8L5.83 6.96C5.68 6.81 5.6 6.61 5.6 6.4L5.6 3.2C5.6 2.75 5.95 2.4 6.39 2.4C6.84 2.4 7.2 2.75 7.2 3.2L7.2 6.06L8.79 7.66C9.11 7.98 9.11 8.48 8.79 8.8C8.64 8.95 8.43 9.03 8.23 9.03Z" fill="#8C9196" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                            </svg>
+                                            <span>Время чтения: 4 мин.</span>
+                                        </div>
+                                        <div class="">
+                                            <svg width="12.799805" height="12.800003" viewBox="0 0 12.7998 12.8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs/>
+                                                <path id="Primary fill" d="M11.6 1.6C12.26 1.6 12.79 2.13 12.79 2.8L12.79 11.6C12.79 12.26 12.26 12.8 11.6 12.8L1.2 12.8C0.53 12.8 0 12.26 0 11.6L0 2.8C0 2.13 0.53 1.6 1.2 1.6L2.39 1.6L2.39 0.8C2.39 0.35 2.75 0 3.2 0C3.64 0 4 0.35 4 0.8L4 1.6L8.79 1.6L8.79 0.8C8.79 0.35 9.15 0 9.6 0C10.04 0 10.39 0.35 10.39 0.8L10.39 1.6L11.6 1.6ZM11.2 4.8L1.6 4.8L1.6 11.2L11.2 11.2L11.2 4.8Z" fill="#8C9196" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                            </svg>
+                                            <span>15 марта 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/korm_1.png" alt="">
+                                <div class="useful_articles-list-title">
+                                    <h3>
+                                        Лучшие корма для хомяков
+                                    </h3>
+                                    <p>
+                                        Хомяки — достаточно привередливые домашние питомцы. Их питание должно быть разнообразным и сбалансированным. Если у вас нет времени и желания составлять рацион...
+                                    </p>
+                                    <div class="useful_articles-list-data">
+                                        <div class="">
+                                            <svg width="12.799805" height="12.800003" viewBox="0 0 12.7998 12.8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs/>
+                                                <path id="Primary fill" d="M6.39 12.8C2.87 12.8 0 9.92 0 6.4C0 2.87 2.87 0 6.39 0C9.92 0 12.79 2.87 12.79 6.4C12.79 9.92 9.92 12.8 6.39 12.8ZM8.23 9.03C8.02 9.03 7.82 8.95 7.66 8.8L5.83 6.96C5.68 6.81 5.6 6.61 5.6 6.4L5.6 3.2C5.6 2.75 5.95 2.4 6.39 2.4C6.84 2.4 7.2 2.75 7.2 3.2L7.2 6.06L8.79 7.66C9.11 7.98 9.11 8.48 8.79 8.8C8.64 8.95 8.43 9.03 8.23 9.03Z" fill="#8C9196" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                            </svg>
+                                            <span>Время чтения: 9 мин.</span>
+                                        </div>
+                                        <div class="">
+                                            <svg width="12.799805" height="12.800003" viewBox="0 0 12.7998 12.8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs/>
+                                                <path id="Primary fill" d="M11.6 1.6C12.26 1.6 12.79 2.13 12.79 2.8L12.79 11.6C12.79 12.26 12.26 12.8 11.6 12.8L1.2 12.8C0.53 12.8 0 12.26 0 11.6L0 2.8C0 2.13 0.53 1.6 1.2 1.6L2.39 1.6L2.39 0.8C2.39 0.35 2.75 0 3.2 0C3.64 0 4 0.35 4 0.8L4 1.6L8.79 1.6L8.79 0.8C8.79 0.35 9.15 0 9.6 0C10.04 0 10.39 0.35 10.39 0.8L10.39 1.6L11.6 1.6ZM11.2 4.8L1.6 4.8L1.6 11.2L11.2 11.2L11.2 4.8Z" fill="#8C9196" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                            </svg>
+                                            <span>7 марта 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>                        
+                        </ul>
+                        <div class="view_more-wrap">
+                            <a href="#" class="popular_goods-all" >
+                                Читать больше статей
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>   
+</body>
+</html>

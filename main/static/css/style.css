@@ -1,0 +1,958 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url(../fonts/SF-Pro-Text/SFProText-Semibold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url(../fonts/SF-Pro-Text/SFProText-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url(../fonts/SF-Pro-Text/SFProText-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "SF Pro Text";
+    src: url(../fonts/SF-Pro-Text/SFProText-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url(../fonts/SF-Pro-Display/SF-Pro-Display-Bold.otf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url(../fonts/SF-Pro-Display/SF-Pro-Display-Semibold.otf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+body{
+    background: rgb(246, 246, 247);
+}
+
+.cart_product {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    max-width: 270px;
+    width: 100%;  
+    padding: 8px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+}
+.cart_product:hover {
+    border-radius: 5px;
+    box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.1),0px 0px 2px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+}
+
+.cart_product-img {
+    background-color: #fff;
+}
+
+
+.cart_product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    max-height: 130px;
+}
+
+
+.cart_product-title a {
+    color: rgb(0, 0, 0);
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: left;
+    text-decoration: none;    
+    transition: .3s;
+}
+
+
+.cart_product-title a:hover {
+    color:rgb(0, 160, 172);
+}
+
+
+.cart_product-weight-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 4px;
+}
+
+
+.cart_product-weight-list li {        
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding: 2px 8px;
+    border-radius: 2px;
+    background: rgb(228, 229, 231);
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.cart_product-weight-list li:hover {
+    color: #fff;
+    background:rgb(0, 160, 172);
+}
+
+
+.cart_product-price-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.cart_product-price-wrapper  p {
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+
+.cart_product-price-wrapper div {
+    padding: 5px 8px 5px 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+    border: 1px solid rgb(186,191,195);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05) inset;
+    &:active {
+        box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+    }
+}
+
+
+.cart_product-buy{
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 160, 172);
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;    
+    transition: .3s;
+}
+
+.cart_product-buy:hover {
+    color: #fff;
+    background:rgb(0, 160, 172);
+}
+
+
+.popular_goods-header{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+
+.popular_goods-header h2{
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Display;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+
+.popular_goods-header-arrow{
+    display: flex;    
+    gap:16px;
+}
+
+
+.popular_goods-header-arrow button{  
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 40px;
+    height: 40px;   
+    border: none;
+    border-radius: 40px;
+    background: rgb(255, 255, 255);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.popular_goods-header-arrow button:hover{
+    background:rgb(0, 160, 172);
+}
+
+.popular_goods-header-arrow button:hover path{
+    fill: #fff;
+}
+
+.cart_product-list{
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    gap: 30px;
+    
+}
+
+.view_more-wrap{
+display: flex;
+justify-content: center;
+margin-top:24px;
+}
+
+
+.popular_goods-all{
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center; 
+    border-radius: 4px;
+    padding: 12px 24px 12px 24px;
+    transition: .3s;  
+    cursor: pointer;
+    display: block;
+
+    
+    border: none;
+    background: rgb(0, 160, 172);   
+    text-decoration: none; 
+    
+}
+
+
+.popular_goods-all:hover{
+    background: green;
+}
+
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+}
+
+.header_wrapper-top-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+}
+
+.header_wrapper-location{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header_wrapper-location-adres p{
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.header_wrapper-location div{
+    display: flex;
+    align-items: center;
+}
+
+.header_wrapper-location div:first-child{
+    gap: 8px;
+}
+
+
+.header_wrapper-location div:last-child{
+    gap: 6px;
+}
+
+.header_wrapper-location-work-time{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.header_wrapper-location-work-time p{
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.header_wrapper-location-phone{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header_wrapper-location-phone span {
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.header_wrapper-location-phone a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color:black;
+}
+
+.header_wrapper-callback{
+    background: none;
+    border: none;
+    color: rgb(44, 110, 203);
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;     
+}
+
+.header_wrapper-down{
+    background: rgb(0, 160, 172);
+}
+
+.header_wrapper-down-container { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.header_wrapper-down-logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.header_wrapper-down-search {
+    flex: 1 1 auto;
+    position: relative;
+
+}
+
+.header_wrapper-down-search-icon{
+    position: absolute;
+    top: 17px;
+    left: 20px;
+}
+
+.header_wrapper-down-search input {    
+    background: white;
+    color: rgb(109, 113, 117);
+    font-family: SF Pro Text;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;    
+    padding: 8px 12px 8px  40px;
+    margin: 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+
+    width: 100%;
+    border: 1px solid rgb(167, 172, 177);
+    
+}
+
+.header_wrapper-down-search input:focus{
+    outline: none;
+}
+
+nav{
+    display: flex;
+    
+}
+
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;    
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+
+.header_wrapper-down-navigation_list{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 32px;
+    list-style-type: none;
+}
+
+
+.header_wrapper-down-korzina {
+    padding: 8px 14px 8px 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid rgb(186,191,195);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;   
+}
+
+.header_wrapper-down-korzina p {
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Text;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+
+.category{
+    margin: 24px;
+}
+
+
+.category_list {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    list-style-type: none;  
+    overflow: auto;
+}
+
+.category_list::-webkit-scrollbar {
+    width: 0;
+}
+
+.category-item {
+    flex: 1 1 auto;   
+    border-radius: 5px;
+    background: rgb(255, 255, 255);    
+    transition: 0.3s ease;
+}
+.category-item a {
+    display: flex;
+    align-items: center;    
+    gap: 16px;    
+    text-decoration: none;
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+}
+
+.category-item:hover p {
+    text-underline-offset: 3px; 
+    color:rgb(0, 160, 172)
+}
+
+.category-item:hover {
+    border-radius: 5px;
+    box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.1),0px 0px 2px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+}
+
+.category-item img  {
+    border-radius: 5px;   
+    background: rgb(255, 255, 255);
+}
+
+.category-item p {
+    display: inline;
+}
+
+
+
+.reklama {
+    background: rgb(255, 255, 255);
+}
+
+.reklama-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+h1 {
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Display;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.reklama-title-left{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 524px;
+    gap: 32px;
+    
+}
+
+.mini {
+display: flex;
+align-items: center;
+
+gap: 32px;
+}
+
+.mini p::before{
+    left: 0;
+    border-radius: 3px;
+    content: "";
+    position: absolute;
+    height: 100%;
+    border: 2px solid rgb(152, 198, 205);
+}
+
+.mini p {
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: left;
+    position: relative;
+    padding-left: 9px;
+}
+
+.reklama-title-left button {
+    padding: 12px 24px;
+    border-radius: 4px;
+    box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.2),0px 1px 0px 0px rgba(0, 0, 0, 0.08);
+    background: rgb(0, 160, 172);
+    border: none;
+    transition: 0.3S;
+    cursor: pointer;
+}
+
+.reklama-title-left button:hover {
+    background: rgb(0, 128, 96);
+}
+
+.reklama-title-left button p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.reklama-title-right{
+    margin: 56px 0px;
+}
+
+.skidki {
+    
+    padding: 56px 0;
+}
+
+.skidki_title{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 32px;  
+}
+
+.skidki_title button {
+    padding: 8px 16px;
+    box-sizing: border-box;
+    border: 1px solid rgb(140, 145, 150);
+    border-radius: 4px;
+    background: rgb(246, 246, 247);
+    cursor: pointer;
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.skidki_title p {
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Display;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: left;  
+}
+
+
+.skidki_title-left {
+    border-radius: 5px;
+    background-color: rgb(255, 215, 157);
+    background-image:url("../img/image31.png");
+    background-repeat: no-repeat;
+    background-position:  right 25px center; 
+    background-size: contain;
+    /* background-size: cover/149px 149px; */
+    width: 100%;
+    padding: 24px;
+    padding-right: 149px;
+    gap: 17px;
+    display: flex;
+    flex-direction: column ;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+
+.skidki_title-right {
+    border-radius: 5px;
+    background: rgb(174, 233, 209);
+    background-image:url("../img/image30.png");
+    background-repeat: no-repeat;
+    background-position: right 25px center; 
+    /* background-size: cover/196px 148.96px; */
+    gap: 17px;
+    width: 100%;
+    padding: 24px; 
+    padding-right: 196px;
+    display: flex;
+    flex-direction: column ;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.new_product {
+    background: rgb(255, 255, 255);
+    margin: 56px 0;
+    padding: 24px;
+}
+
+.cart_product:has(div) {
+    background: rgb(250, 251, 251);
+
+}  
+
+.new_product:has(.popular_goods-header-arrow) .popular_goods-header-arrow button {
+    background: rgb(246, 246, 247);
+}
+
+.new_product:has(.popular_goods-header-arrow) .popular_goods-header-arrow button:hover {
+    background:rgb(0, 160, 172);
+}
+
+/* .popular_brand {
+    gap: 24px;
+} */
+
+.popular_brand h2{
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Display;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+
+
+.popular_brand-list li {
+    list-style-type: none;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    padding: 14px 20px;
+}
+
+.popular_brand-list ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;    
+}
+
+.otziv_content {
+    margin: 56px 0;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 22px;
+}
+
+
+.otziv_content h2 {
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Display;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.otziv_title {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    
+    gap: 12px;
+}
+
+.otziv_title h3 {
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+
+.otziv_title p {
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0px;
+    text-align: center;       
+    max-width: 720px;
+}
+
+.otziv-contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.otziv-contact div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.otziv-contact p {
+    color: rgb(109, 113, 117);
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+
+.otziv-next:has(.popular_goods-header-arrow) .popular_goods-header-arrow button {
+    background: rgb(246, 246, 247);
+}
+
+.otziv-next p {
+    color: rgb(145, 106, 0);
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.otziv-next:has(.popular_goods-header-arrow) .popular_goods-header-arrow{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.otziv-next:has(.popular_goods-header-arrow) .popular_goods-header-arrow button:hover {
+    background:rgb(0, 160, 172);
+}
+
+
+.useful_articles {    
+    margin: 56px;
+}
+
+.userful_articles-title {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.userful_articles-title:has(.view_more-wrap) .view_more-wrap {
+    margin-top: 0;
+}
+
+.useful_articles-top {
+    display: flex;
+    justify-content: space-between;
+}
+.useful_articles-top h2 {
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Display;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.useful_articles-list {
+    
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 30px;
+    
+}
+
+.useful_articles-list li {
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    padding: 16px;  
+    cursor: pointer;
+    transition: 0.2s;
+}
+.useful_articles-list li:hover {
+    border-radius: 5px;
+
+    /* 32px */
+    box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.1),0px 0px 2px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+}
+
+.useful_articles-list-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.useful_articles-list-title p {
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.useful_articles-list-title h3 {
+    color: rgb(32, 34, 35);
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.useful_articles-list-data {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 48px;
+}
+
+.useful_articles-list-data span {
+    color: rgb(140, 145, 150);
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
