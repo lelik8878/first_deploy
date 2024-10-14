@@ -1,3 +1,4 @@
+from django.http import JsonResponse
 from django.shortcuts import render
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -16,3 +17,7 @@ def get_product_list(request):
     serializer = ProductSerializer(products, many=True, context={'request': request})
 
     return Response(serializer.data)
+
+def get_api_j(request):
+    api_j = {'name': 'Johan', 'age': '20'}
+    return JsonResponse(api_j)
