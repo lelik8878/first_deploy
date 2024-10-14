@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" />
+    <title>Добавить продукт</title>
+</head>
+<body>
+    <h1 style="text-align: center">Добавление продукта</h1>
+    <div class="add_product">
+        <table class="table">
+        <caption>Список продуктов</caption>
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Картинка</th>
+                <th>Цена</th>
+                <th>Единица измерения</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for i in products %}
+            <tr>
+                <td>{{ i.title }}</td>
+                <td><img src="{{i.image.url}}" alt="" /></td>
+                <td>{{ i.price }}</td>
+                <td>{{ i.unit }}</td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+    </div>
+    <div class="add_product">
+        <form action="" method="POST" enctype="multipart/form-data">
+            <table class="table">
+                <caption>Добавление продукта</caption>
+                {% csrf_token %}
+                {{ product_form.as_table }}
+            </table>
+            <button class="table_button">
+                Сохранить
+            </button>
+        </form>
+    </div>
+    <div class="add_product">
+        <form action="" method="POST">
+            <table class="table">
+                <caption>Добавление свойства</caption>
+                {% csrf_token %}
+                {{ product_properties_form.as_table }}
+            </table>
+            <button class="table_button">
+                Сохранить
+            </button>
+        </form>
+    </div>
+</body>
+</html>
