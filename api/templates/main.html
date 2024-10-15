@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Api_text</title>
+</head>
+<body>
+<form action="http://127.0.0.1:8000/api_text/" method="POST">
+    {% csrf_token %}
+    <input type="text" name="Name">
+    <button>OK</button>
+</form>
+<script src="{% static 'js/fetch_api.js' %}"></script>
+</body>
+</html>
