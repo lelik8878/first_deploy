@@ -36,13 +36,13 @@
     </table>
     </div>
     <div class="add_product">
-        <form action="" method="POST" enctype="multipart/form-data">
+        <form class="form" action="" method="POST" enctype="multipart/form-data">
             <table class="table">
                 <caption>Добавление продукта</caption>
                 {% csrf_token %}
                 {{ product_form.as_table }}
             </table>
-            <button class="table_button">
+            <button type="button" class="table_button">
                 Сохранить
             </button>
         </form>
