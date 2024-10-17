@@ -51,8 +51,24 @@ def add_product(request):
 
 
 def send_data(request):
-    print(request.body)
-    new_data = json.loads(request.body)
-    print(new_data)
-    print(type(new_data))
+    if request.method == 'POST':
+        print(request.POST)
+        print(request.FILES)
+        new_product = ProductForm(request.POST, request.FILES)
+        if new_product.is_valid():
+            new_product_pre_save = Product(title=new_product.cleaned_data.get('product_title'),
+                                           image=new_product.cleaned_data.get('product_image'),
+                                           price=new_product.cleaned_data.get('product_price'),
+                                           unit=new_product.cleaned_data.get('product_unit'))
+            print(new_product_pre_save)
+        else:
+            new_errors = {}
+            print(new_product.errors)
+            print(type(new_product.errors))
+            for error, x in new_product.errors.items():
+                new_errors[error] = x
+                print(error, x)
+            print(new_errors)
+            errors_json = json.dumps(new_errors, ensure_ascii=False, indent=4)
+            return JsonResponse(errors_json, safe=False)
     return JsonResponse({})
