@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 
 
@@ -10,3 +10,5 @@ def get_text(request):
 
 def accept_data(request):
     return HttpResponse("Recieved")
+
+

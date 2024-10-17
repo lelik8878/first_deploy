@@ -1,3 +1,5 @@
+import json
+
 from django.http import JsonResponse
 from django.shortcuts import render
 from rest_framework.decorators import api_view
@@ -46,3 +48,11 @@ def add_product(request):
                'product_form': product_form,
                'product_properties_form': product_properties_form}
     return render(request,"add_product.html", context)
+
+
+def send_data(request):
+    print(request.body)
+    new_data = json.loads(request.body)
+    print(new_data)
+    print(type(new_data))
+    return JsonResponse({})

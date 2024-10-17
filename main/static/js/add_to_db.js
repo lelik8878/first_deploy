@@ -13,8 +13,16 @@ function add_to_json() {
         product_price: inputList[3].value,
         product_unit: selectList.value
     })
-    console.log(new_json)
-    console.log(inputList[2].files[0])
+    fetch('http://127.0.0.1:8000/send_data/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': inputList[0].value
+        },
+        body: new_json
+    })
+        .then(response => response.json())
+        .then(data => console.log(data))
 }
 
 new_button.addEventListener('click', add_to_json)
