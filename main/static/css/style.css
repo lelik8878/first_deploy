@@ -956,3 +956,71 @@ gap: 32px;
     letter-spacing: 0px;
     text-align: left;
 }
+
+.form_product{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+padding: 12px 0;
+}
+
+
+
+.new_product {
+color: rgb(32, 34, 35);
+background: #DB7093;
+border: 5px groove #F0F8FF;
+font-family: SF Pro Display;
+font-size: 28px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.table {
+display: table-cell;
+vertical-align: middle
+
+color: rgb(32, 34, 35);
+font-family: SF Pro Display;
+font-size: 16px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+
+.new_product{
+
+}
+
+.form_product {
+align-items: center;
+display: flex;
+flex-direction: column;
+background: #DB7093;
+}
+
+.form_register {
+align-items: center;
+display: flex;
+flex-direction: column;
+background: #DB7093;
+}
+
+.save_product button {
+padding: 12px 24px;
+border-radius: 4px;
+box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.2),0px 1px 0px 0px rgba(0, 0, 0, 0.08);
+background: rgb(0, 160, 172);
+border: none;
+transition: 0.3S;
+cursor: pointer;
+}
+
+.save_product button:hover {
+background: rgb(0, 128, 96);
+}

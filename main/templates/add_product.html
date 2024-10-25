@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% block content %}
+<div class="form_product">
+<!--    <table>-->
+<!--      <thead>-->
+<!--        <tr>-->
+<!--          <th>Название</th>-->
+<!--          <th>Изображение</th>-->
+<!--          <th>Цена</th>-->
+<!--        </tr>-->
+<!--      </thead>-->
+<!--      <tbody>-->
+<!--        <tr>-->
+<!--        {% for a in product%}-->
+<!--          <td>{{ a.title }}</td>-->
+<!--          <td>{{ a.price }}</td>-->
+<!--        </tr>-->
+<!--        {% endfor %}-->
+<!--      </tbody>-->
+<!--    </table>-->
+    <h1 class="new_product">Добавление нового продукта</h1>
+    <form class="form" action="" method="POST">
+        <table class="table">
+        {% csrf_token %}
+        {{ form.as_table }}
+        </table>
+        <button type="button" class="save_product">
+            Cохранить
+        </button>
+    </form>
+</div>
+<script src="{% static 'js/add_to_db.js' %}"></script>
+<script src="{% static 'js/send_file.js' %}"></script>
+{% endblock %}
+</body>
+</html>
